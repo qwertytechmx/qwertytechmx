@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QWERTY Tech</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        if($(".flex-column").is(":visible")){
+            $("#ig").fadeIn(5000);
+            $("#ig").addClass("d-inline");
+            $("#fb").fadeIn(5000);
+            $("#fb").addClass("d-inline");
+        }
+    });
+    </script>
+    <style>
+        .background {
+            background: url('img/background.jpg');
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        h1 {
+            font-family: 'Barlow', sans-serif;
+            font-size: 700%;
+        }
+        
+        h3 {
+            font-family: 'Barlow', sans-serif;
+            font-size: 260%;
+            font-weight: 500; 
+        }
+
+        a {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            
+            h1 {
+                font-size: 350%;
+            }
+            
+            h3 {
+                font-size: 150%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid background">
+        <div class="container d-flex flex-column justify-content-center h-100 text-white align-items-center">
+            <h1>QWERTY Tech</h1>
+            <h3>Cooming Soon...</h3>
+            <div class="row text-center d-inline-block mt-4">
+            
+                <a id="ig" class="px-1" href="https://www.instagram.com/qwertytechservices/" target="_blank">
+                    <img src="https://img.icons8.com/metro/36/000000/instagram-new.png"/>
+                </a>
+                
+                <a id="fb" href="#">
+                    <img src="https://img.icons8.com/material-outlined/45/000000/facebook.png" target="_blank"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
